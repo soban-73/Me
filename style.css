@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+   box-sizing: border-box;
+}
+body
+{
+    background-color: rgb(53, 50, 50);
+}
+header
+{
+    width: 100vw;
+    height: 70vh;
+    background-image: url(me.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hamburger
+{
+    display: none;
+}
+nav
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 6%;
+}
+nav>p
+{
+color: white;
+font-size: 40px;
+padding-left: 17%;
+}
+.links
+{
+    color: white;
+    width: auto;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+}
+.links>a
+{
+   display: flex;
+   align-items: center;
+   padding: 0 8%;
+   margin-top: 1%;
+    transition: 0.2s ease-in-out;
+    color: white;
+    text-decoration: none;
+}
+a:hover
+{
+    background-color: rgb(28, 56, 80);
+}
+.headerme
+{
+    display: flex;
+    flex-direction: column;
+    height: calc(70vh - 49px);
+    align-items: center;
+    justify-content: center;
+    padding-left: 23%;
+    text-align: center;
+}
+.headerme>:nth-child(1)
+{
+font-size: 60px;
+color: white;
+}
+.headerme>:nth-child(2)
+{
+    font-size: 25px;
+    color: white;
+}
+
+
+@media (max-width:1420px)
+{
+    nav
+    {
+        gap: 0;
+    }
+    nav>p{
+        padding-left: 2%;
+    }
+}
+@media (max-width:1050px)
+{
+    nav>p{
+        font-size: 35px;
+    }
+   .links>a{
+    font-size: 15px;
+   } 
+   .headerme
+   {
+    padding-left: 12%;
+    padding-top: 44%;
+   }
+   .headerme>:nth-child(1)
+  {
+  font-size: 50px; 
+  }
+  .headerme>:nth-child(2)
+  {
+    font-size: 23px; 
+  }
+}
+@media(max-width:853px)
+{
+    nav{
+        display: none;
+    }
+    .hamburger
+    {
+        display: flex;
+        font-size: 50px;
+        color: white;
+        padding-left: 20px;
+    }
+}
