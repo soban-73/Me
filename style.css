@@ -220,7 +220,6 @@ gap: 3%;
     width: 31%;
   height: 50%;
   background-color: #181A1B;
-  border: 3px solid #1a1b1d;
   border-radius: 15px;
 }
 .skills>:nth-child(1)
@@ -601,6 +600,7 @@ font-size: 17.5px;
         margin-top: 22%;
     } 
 }
+
 
 
 
