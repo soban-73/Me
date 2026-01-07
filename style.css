@@ -13,7 +13,7 @@ html, body
 }
 body
 {
-    background-color: rgb(53, 50, 50);
+    background-color: #1B1E1F;
 
 }
 /*-----------------------------HEADER---------------------------------*/
@@ -34,7 +34,9 @@ nav
     display: flex;
     flex-direction: row;
     width: 100%;
-    gap: 10%;
+    gap: 7%;
+    position: fixed;
+    z-index: 999;
 }
 nav>p
 {
@@ -46,7 +48,6 @@ padding-left: 17%;
 {
     color: white;
     width: auto;
-    font-size: 20px;
     cursor: pointer;
     display: flex;
     flex-direction: row;
@@ -55,7 +56,8 @@ padding-left: 17%;
 {
    display: flex;
    align-items: center;
-   padding: 0 8%;
+   font-size: 15px;
+   padding: 0 14%;
    margin-top: 1%;
     transition: 0.2s ease-in-out;
     color: white;
@@ -89,7 +91,7 @@ color: white;
 /*------------------------------ABOUT ME-------------------*/
 .aboutme
 {
-height: 70vh;
+height: 82vh;
 width: 100vw;
 display: flex;
 justify-content: center;
@@ -101,11 +103,11 @@ align-items: center;
 width: 1200px;
 height: 646px;
 gap: 2%;
-border: 5px solid rgb(46, 45, 45);
+border: 2px solid #161819(36, 35, 35);
 border-radius:12px;
 display: flex;
 flex-direction: row;
-    background-color: rgb(33, 32, 32);
+    background-color: #181A1B;
 }
 .aboutme img
 {
@@ -117,8 +119,15 @@ flex-direction: row;
     display: flex;
     flex-direction: column;
     padding: 5% 0;
-    gap: 10%;
+    gap: 15%;
 
+}
+.data>:nth-child(1)
+{
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    gap: 15%;
 }
 .data>:nth-child(1)>:nth-child(1) 
 {
@@ -133,24 +142,24 @@ font-weight: 600;
 }
 .data>:nth-child(1)>:nth-child(3){
 color: grey;
-font-size: 23px;
+font-size: 17px;
 }
 .details
 {
-    width: 70%;
+    width: 40%;
+    height: 55%;
     display: grid;
     grid-template-columns:1fr 1fr ;
-    gap: 7%;
 }
 .details>:nth-child(odd)
 {
     color: white;
-    font-size: 25px;
+    font-size: 18px;
 }
 .details>:nth-child(even)
 {
     color: grey;
-    font-size: 25px;
+    font-size: 18px;
 }
 
 /*----------------------------SKILLS-------------------------*/
@@ -185,7 +194,7 @@ font-size: 1rem;
 }
 .box
 {
-    margin-top: 4%;
+    margin-top: 2%;
   width: 100vw;
   height: 90vh;
   display: flex;
@@ -211,7 +220,7 @@ gap: 3%;
     width: 31%;
   height: 50%;
   background-color: #181A1B;
-  border: 3px solid #141516;
+  border: 3px solid #1a1b1d;
   border-radius: 15px;
 }
 .skills>:nth-child(1)
@@ -246,15 +255,149 @@ gap: 3%;
   text-align: center;
 }
 
+/*---------------------------FOOTERRRRRR-------------*/
+.contact
+{
+  background-color: #181A1B;
+  margin-top: 7%;
+  width: 100vw;
+  height: 80vh;
+}
+.fheading
+{
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+    text-align: center;
+  gap: 6%;
+}
+.fheading>:nth-child(1)
+{
+  font-size: 15px;
+  color: grey;
+  font-weight: 800;
+}
+.fheading>:nth-child(2)
+{
+  font-size: 45px;
+  color: white;
+  font-weight: 700;
+}
+.fheading>:nth-child(3)
+{
+  font-size: 15px;
+  color: grey;
+}
+.form
+{
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+}
+
+
+.input{
+  width: 49%;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.input>div
+{
+  border-radius: 10px;
+  background-color: #1B1E1F;
+  width: 65%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.your
+{
+  height:20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    gap: 5%;
+}
+.your>input
+{
+  border: 2px solid #4A5053;
+  background: transparent;
+  padding: 2% 3%;
+  width: 40%;
+  height: 54%;
+}
+
+.message
+{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  align-items: center;
+}
+.message>input
+{
+    border: 2px solid #4A5053;
+  background: transparent;
+  padding: 2% 3%;
+  width: 85%;
+  height: 13%;
+}
+.message>textarea
+{
+  width: 85%;
+  height: 55%;
+  background: transparent;
+      border: 2px solid #4A5053;
+  padding: 2% 3%;
+}
+.your input::placeholder, .message>input::placeholder, .message>textarea::placeholder
+{
+  font-size: 13px;
+  color: #38393A;
+  font-weight: 800;
+}
+button
+{
+margin-right:52%;
+width: 32%;
+height: 12%;
+background-color: #464731;
+border: 1px solid #4A5053;
+border-radius: 7px;
+ color: white;
+ font-weight: 500;
+}
+
+.footerlinks
+{
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  gap: 8%;
+}
+.footerlinks>div
+{
+  display: flex;
+  flex-direction: row;
+}
+.linkdetail>:nth-child(1)
+{
+color: white;
+}
+.linkdetail>:nth-child(2)
+{
+color: #6B6761;
+}
 
 
 @media (max-width:1500px)
 {
     /*-------------HEADER----------------*/
-    nav
-    {
-        gap: 0;
-    }
     nav>p{
         padding-left: 2%;
     }
@@ -284,7 +427,7 @@ gap: 3%;
 }
     .box
     {
-        margin-top: -18%;
+        margin-top: -8%;
     }  
     /*---------------------------*/
 }
@@ -298,7 +441,7 @@ gap: 3%;
         font-size: 35px;
     }
    .links>a{
-    font-size: 15px;
+    font-size: 12px;
    } 
    .headerme
    {
@@ -319,6 +462,10 @@ gap: 3%;
         margin-top: -25%;
     } 
   /*---------------------------*/
+  .input>div
+  {
+    width: 85%;
+  }
 }
 
 
@@ -363,21 +510,23 @@ height: 400px;
       .box
     {
         margin-top: -8%;
+        height: 290vh;
     } 
-    .box
-  {
-    height: 290vh;
-  }
   .box>div
   {
     width: 100%;
     height: 100%;
+    gap:1%;
     flex-direction: column;
     flex-wrap: nowrap;
   }
   .box>div div
   {
-    width: 100%;
+    width: 89%;
+  }
+  .skills
+  {
+    margin: 0% 6%;
   }
   .skills>:nth-child(1)>img
 {
@@ -388,6 +537,38 @@ height: 400px;
 .skills>:nth-child(1) , .skills>:nth-child(2)
 {
   font-size: 1.5rem;
+}
+/*---------FOOTER----------*/
+footer
+{
+  margin-top: 40%;
+  height: 130vh;
+}
+.contact
+{
+  height: 100%;
+}
+.form
+{
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+.input
+{
+ width: 78%;
+ height: 65%; 
+ align-items: center;
+}
+.footerlinks
+{
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.footerlinks>div
+{
+  width: 100%;
 }
 }
 
@@ -424,23 +605,3 @@ font-size: 17.5px;
 
 
 
-
-h1, h2, h3, h4, h5, h6, p, a, span, li,div {
-    animation: popIn 0.6s ease-out forwards;
-    opacity: 0;
-}
-@keyframes popIn {
-    0% {
-        opacity: 0;
-        transform: translateY(20px) scale(0.98);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-}
-
-.pop-animate {
-    opacity: 0;
-    animation: popIn 0.6s ease-out forwards;
-}
