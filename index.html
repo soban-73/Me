@@ -274,4 +274,17 @@
 </body>
 </html>
 
+<script>
+    const nav = document.querySelector("nav");
+    const header = document.querySelector("#home");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > header.offsetHeight - 70) {
+            nav.classList.add("scrolled");
+        } else {
+            nav.classList.remove("scrolled");
+        }
+    });
+</script>
+
 
